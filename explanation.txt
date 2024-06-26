@@ -1,0 +1,10 @@
+This code defines four functions:
+
+1. **add**: This function takes two parameters `x` and `y`, and returns the sum of `x` and `y`.
+
+2. **subtract**: This function takes two parameters `x` and `y`, and returns the result of subtracting `y` from `x`.
+
+3. **multiply**: This function takes two parameters `x` and `y`, and returns the product of `x` and `y`.
+
+4. **divide**: This function takes two parameters `x` and `y`, and returns the result of dividing `x` by `y`. 
+   - It includes a check for division by zero, and raises a `ZeroDivisionError` with the message "Cannot divide by zero" if `y` is equal to 0.
