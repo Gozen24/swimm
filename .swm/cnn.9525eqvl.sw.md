@@ -11,9 +11,7 @@ We will cover:
 
 1. Data preprocessing
 
-
 2. Model architecture
-
 
 3. Training setup
 
@@ -89,25 +87,23 @@ validation_generator = test_datagen.flow_from_directory(
 
 ## Model architecture
 
-<SwmSnippet path="/cnn.py" line="28">
+<SwmSnippet path="/cnn.py" line="29">
 
 ---
 
 We define the CNN model using the Sequential API. The model consists of multiple convolutional and pooling layers followed by fully connected layers. This architecture is designed to extract features from the images and perform classification.
 
 ```
-
 model = Sequential([
     Conv2D(32, (3, 3), activation='relu', input_shape=(150, 150, 3)),
     MaxPooling2D(2, 2),
     Conv2D(64, (3, 3), activation='relu'),
     MaxPooling2D(2, 2),
     Conv2D(128, (3, 3), activation='relu'),
-    MaxPooling2D(2,   
- 2),
+    MaxPooling2D(2, 2),
     Flatten(),
     Dense(128, activation='relu'),
-    Dense(num_classes, activation='softmax')
+    Dense(128, activation='softmax')
 ])
 ```
 
