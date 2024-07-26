@@ -1,0 +1,21 @@
+{
+    "rules": {
+        "ec14f8c7-4188-42f0-9b94-4c8515c3a028": {
+            "name": "\"Model architecture in CNN implementation\"\n   ",
+            "rule": {
+                "type": "regex",
+                "regex": "def create_model\\\\(.*?Conv2D.*?MaxPooling2D.*?Flatten.*?Dense.*?\\\\):",
+                "ignoreCase": false
+            },
+            "actions": {
+                "ide": {
+                    "doc_id": "9525eqvl",
+                    "message": "When a dev is defining the model architecture in the CNN implementation code (\"/cnn.py\"), I want them to find this document because it explains how to define the model architecture using the Sequential API, consisting of convolutional and pooling layers followed by fully connected layers."
+                }
+            }
+        }
+    },
+    "view_order": [
+        "ec14f8c7-4188-42f0-9b94-4c8515c3a028"
+    ]
+}
