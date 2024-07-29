@@ -19,11 +19,11 @@ We will cover:
 
 ## Data preprocessing
 
-<SwmSnippet path="/cnn.py" line="1">
+<SwmSnippet path="cnn.py" line="1">
 
 ---
 
-We start by defining the data augmentation for the training dataset. This helps in improving the model's generalization by applying random transformations to the input images.
+This code snippet imports the necessary libraries for working with TensorFlow and defines a neural network model using the Keras API. It imports layers for convolutional, max pooling, flattening, and dense operations, as well as an image data generator for preprocessing. Additionally, it imports the numpy library for numerical operations.
 
 ```
 import tensorflow as tf
@@ -33,6 +33,19 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 import numpy as np
 
 
+```
+
+---
+
+</SwmSnippet>
+
+<SwmSnippet path="/cnn.py" line="8">
+
+---
+
+This code snippet creates an `ImageDataGenerator` object, which preprocesses and augments image data for training a model. The `rescale` argument scales the pixel values of the images, the `shear_range` argument randomly applies shear transformations, the `zoom_range` argument randomly zooms into the images, and the `horizontal_flip` argument randomly flips the images horizontally.
+
+```python
 # Assuming you have a dataset of images organized into folders
 train_datagen = ImageDataGenerator(rescale=1./255,
                                    shear_range=0.2,
@@ -92,6 +105,8 @@ validation_generator = test_datagen.flow_from_directory(
 ---
 
 We define the CNN model using the Sequential API. The model consists of multiple convolutional and pooling layers followed by fully connected layers. This architecture is designed to extract features from the images and perform classification.
+
+This code snippet defines a `Sequential` model for a convolutional neural network (CNN). It consists of several layers, including `Conv2D` layers with different filter sizes and `MaxPooling2D` layers for downsampling. The model also includes `Flatten` layer to convert the 2D feature maps to a 1D vector, and two `Dense` layers for classification. The activation functions used are `relu` and `softmax`.
 
 ```
 model = Sequential([
