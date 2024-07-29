@@ -5,7 +5,7 @@ title: CNN
 
 This document will walk you through the implementation of the Convolutional Neural Network (CNN) feature.
 
-The feature involves setting up a CNN for image classification using <SwmToken path="/cnn.py" pos="1:2:2" line-data="import tensorflow as tf">`tensorflow`</SwmToken> and Keras.
+The feature involves setting up a CNN for image classification using <SwmToken path="/cnn.py" pos="1:2:2" line-data="import tensorflow as tf">`tensorflow`</SwmToken> and <SwmToken path="/cnn.py" pos="3:4:4" line-data="from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense">`keras`</SwmToken>.
 
 We will cover:
 
