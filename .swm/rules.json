@@ -1,21 +1,21 @@
 {
     "rules": {
-        "d28c6480-fe60-4845-bdaf-9e19a65ece64": {
-            "name": "\"Model Architecture in CNN Implementation\"\n   ",
+        "08229d80-ffa2-4a9d-b9f6-52c80804853d": {
+            "name": "\"Setting up a CNN model for image classification\"\n   ",
             "rule": {
                 "type": "regex",
-                "regex": "Sequential\\(",
+                "regex": "Sequential",
                 "ignoreCase": false
             },
             "actions": {
                 "ide": {
                     "doc_id": "9525eqvl",
-                    "message": "when a dev creating new model, make sure at least 3 layer is created"
+                    "message": "When a dev is setting up a Convolutional Neural Network (CNN) model for image classification using TensorFlow and Keras, I want them to find this document because it covers the implementation of the CNN feature, including data preprocessing, model architecture, and training setup."
                 }
             }
         }
     },
     "view_order": [
-        "d28c6480-fe60-4845-bdaf-9e19a65ece64"
+        "08229d80-ffa2-4a9d-b9f6-52c80804853d"
     ]
 }
